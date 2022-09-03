@@ -1,6 +1,15 @@
-.menu{
-    display: none;
+.dropdown {
+  display: inline-block;
+  position: relative;
 }
-.dropdown:hover + .menu{
-    display: block;
+.menu {
+  display: none;
+}
+
+.dropdown:hover .menu {
+  display: block;
+}
+
+.menu a {
+  display: block;
 }
