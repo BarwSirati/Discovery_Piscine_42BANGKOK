@@ -7,6 +7,11 @@ const calculate = () => {
   const num2 = parseFloat(document.getElementById("num2").value);
   const operator = document.getElementById("operator").value;
   let ans = 0;
+  if (isNaN(num1) || isNaN(num2)) {
+    console.log("Error :(");
+    alert("Error :(");
+    return;
+  }
   if (num1 < 0 || num2 < 0) {
     console.log("Error :(");
     alert("Error :(");
